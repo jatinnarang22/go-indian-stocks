@@ -1,5 +1,5 @@
 "use client";
-import Data from "../Dummydata_Market/page.js";
+import Data from "../Dummydata_Market/data.js";
 
 export default function MarketStoriesPage() {
   return (

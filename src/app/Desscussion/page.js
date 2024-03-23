@@ -1,5 +1,5 @@
 "use client";
-import user from "../Dummydata_Dessucssion/page.js";
+import user from "../Dummydata_Dessucssion/data.js";
 
 export default function DiscussionPage() {
   return (
