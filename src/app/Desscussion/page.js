@@ -1,7 +1,12 @@
 "use client";
 import user from "../Dummydata_Dessucssion/data.js";
+import dynamic from "next/dynamic";
 
-export default function DiscussionPage() {
+export default dynamic(() => Promise.resolve(DiscussionPage), {
+  ssr: false,
+});
+
+function DiscussionPage() {
   return (
     <div
       className={`flex-[3]  ${

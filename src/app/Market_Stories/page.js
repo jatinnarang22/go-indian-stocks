@@ -1,7 +1,12 @@
 "use client";
 import Data from "../Dummydata_Market/data.js";
+import dynamic from "next/dynamic";
 
-export default function MarketStoriesPage() {
+export default dynamic(() => Promise.resolve(MarketStoriesPage), {
+  ssr: false,
+});
+
+function MarketStoriesPage() {
   return (
     <div
       className={`container ${
